@@ -7,9 +7,9 @@ def get_files(root):
     ## Variabile che conterrà il tutto
     doom = {}
     ## Questo for è stato preso da https://stackoverflow.com/questions/2909975/python-list-directory-subdirectory-and-files
-    for path, subdirs, files in os.walk(root):
+    for path, subdirs, files in list(os.walk(root))[::-1]:
         for name in files:
-            if name.__contains__("Store"):
+            if name[0] == '.':
                 continue
             file = os.path.join(path, name)[15:]
             ### Mia modifiche: Raggruppo in mesi
@@ -18,6 +18,7 @@ def get_files(root):
             if not doom.keys().__contains__(mese):
                 doom[mese] = {}
             ## Controllo se dentro abbiamo già il progetto
+            print(os.path.join(path, name))
             nome_progetto = file.split('/')[1]
             if not doom[mese].keys().__contains__(nome_progetto):
                 doom[mese][nome_progetto] = []

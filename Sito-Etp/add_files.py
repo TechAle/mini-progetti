@@ -17,8 +17,8 @@ def create_path(scelta):
     ## Cerco qual'è il nome reale nella nostra directory
     mese_directory = [x for x in os.listdir("php_files") if x.__contains__(mese)][0]
     ## Ricavo il numero che prenderà il nostro progetto
-    num = len(os.listdir("./php_files/01_settembre"))
-    num = str(num) if num + 1 > 9 else '0' + str(num)
+    num = len(os.listdir("./php_files/" + mese_directory))
+    num = str(num + 1) if num + 1 > 9 else '0' + str(num)
     ## Creo la directory
     path_ = f"./php_files/{mese_directory}/{num})_{scelta}"
     ## Muovo il file
