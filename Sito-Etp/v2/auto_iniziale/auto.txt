@@ -1,0 +1,5 @@
+macchina1;1
+macchina2;2
+macchina3;3
+aaaaa;5
+aaaaa;5
