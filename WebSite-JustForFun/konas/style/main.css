@@ -1,0 +1,132 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.img_std {
+    position: absolute;
+    margin: 10px 10px 10px 10px;
+}
+
+#discord_img {
+    height: 100px;
+}
+#konas_img_modules {
+    height: 80px;
+    left: 10px;
+    bottom: 10px;
+}
+
+#download_img {
+    height: 80px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#terms_cond {
+    height: 100px;
+    right: 10px;
+}
+
+html {
+    background: conic-gradient(#CF05FE 19.5%, #FFAB4F 30.5%, #FFAB4F 0%, #FF0662 69%, #FF0662 0%, #8425DA 80.5%, #8425DA 0%, #CF05FE 101%) 50% 50% / 100% 100% no-repeat;
+}
+#container_img {
+    position:relative;
+    width:90vw;
+    margin-top: 40px;
+}
+
+#desktopTest {
+    background-color: red;
+    height: 50px;
+}
+
+#konas_title {
+    position:absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: PT serif;
+    font-size: 50px;
+    background: linear-gradient(to right, #8425DA 0%, #CF05FE 100%);
+    width: 20%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#konas_descrizione {
+    position:absolute;
+    top: 485px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: PT serif;
+    font-size: 30px;
+    background: linear-gradient(to right, #8425DA 0%, #CF05FE 100%);
+    width: 20%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#confirm {
+    display: none;
+    background-color: white;
+    border: 3px solid black;
+    position: absolute;
+    width: 400px;
+    max-height: 600px;
+    top: 1%;
+    left: 150px
+}
+#just-line-break {
+    white-space: pre-line;
+}
+#confirm button {
+    background: linear-gradient(to right, #8425DA 0%, #CF05FE 100%);
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 5px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+#confirm .message {
+    text-align: left;
+    margin: 2px 5px 2px 5px;
+    overflow-y: scroll;
+    max-height: 500px;
+}
+.yes {
+    margin-top: 5px;
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+
+    #container_img {
+        margin-top: 65%;
+    }
+
+    #confirm {
+        left: 30%;
+    }
+
+    #discord_img {
+        height: 230px;
+    }
+    #konas_img_modules {
+        height: 200px;
+    }
+    #terms_cond {
+        height: 200px;
+    }
+    #download_img {
+        height: 200px;
+    }
+}
